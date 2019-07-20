@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
+  private warning: string;
   credentials: userForm = {
     email: '',
     password: ''
@@ -22,10 +23,10 @@ export class LoginComponent implements OnInit {
 
   login() {
     this.authenticationService.loginUser(this.credentials).subscribe((response) => {
-      console.log("response", response);
       this.router.navigate(['/dashboard']);
     }, (err) => {
       console.error(err);
+      this.warning = err.error.error;
     });
   }
 
