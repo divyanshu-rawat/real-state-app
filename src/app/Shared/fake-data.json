@@ -1,0 +1,612 @@
+{
+    "results": {
+        "next": "https://places.cit.api.here.com/places/v1/browse;context=Y2F0PWFjY29tbW9kYXRpb24mZmxvdy1pZD0wNjQyMjYyNi04YjNkLTVmZGEtYmUzMi01NjVkNDRlZTcwN2NfMTU2MzY1NDkyOTYzMl84MTY0XzI4ODUmb2Zmc2V0PTIwJnNpemU9MjA?in=48.1181181%2C11.6296407%3Br%3D2000.0&app_id=SdTuhGMGwWWx6EFxDEmm&app_code=lmlX4F1r-Od90a1aZjqWsQ",
+        "items": [
+            {
+                "position": [
+                    48.11823,
+                    11.62194
+                ],
+                "distance": 572,
+                "title": "AAA-Apartment",
+                "averageRating": 0,
+                "category": {
+                    "id": "hotel",
+                    "title": "Hotel",
+                    "href": "https://places.cit.api.here.com/places/v1/categories/places/hotel?app_id=SdTuhGMGwWWx6EFxDEmm&app_code=lmlX4F1r-Od90a1aZjqWsQ",
+                    "type": "urn:nlp-types:category",
+                    "system": "places"
+                },
+                "icon": "https://download.vcdn.cit.data.here.com/p/d/places2_stg/icons/categories/01.icon",
+                "vicinity": "Wemdinger Straße 4<br/>81671 Munich",
+                "having": [],
+                "type": "urn:nlp-types:place",
+                "href": "https://places.cit.api.here.com/places/v1/places/276u2838-1fbe3c89906e4428b24a22a911a4389e;context=Zmxvdy1pZD0wNjQyMjYyNi04YjNkLTVmZGEtYmUzMi01NjVkNDRlZTcwN2NfMTU2MzY1NDkyOTYzMl84MTY0XzI4ODUmcmFuaz0w?app_id=SdTuhGMGwWWx6EFxDEmm&app_code=lmlX4F1r-Od90a1aZjqWsQ",
+                "id": "276u2838-1fbe3c89906e4428b24a22a911a4389e"
+            },
+            {
+                "position": [
+                    48.11836,
+                    11.63737
+                ],
+                "distance": 574,
+                "title": "Hotel am Ostpark",
+                "averageRating": 0,
+                "category": {
+                    "id": "hotel",
+                    "title": "Hotel",
+                    "href": "https://places.cit.api.here.com/places/v1/categories/places/hotel?app_id=SdTuhGMGwWWx6EFxDEmm&app_code=lmlX4F1r-Od90a1aZjqWsQ",
+                    "type": "urn:nlp-types:category",
+                    "system": "places"
+                },
+                "icon": "https://download.vcdn.cit.data.here.com/p/d/places2_stg/icons/categories/01.icon",
+                "vicinity": "Michaeliburgstraße 21<br/>81671 München",
+                "having": [],
+                "type": "urn:nlp-types:place",
+                "href": "https://places.cit.api.here.com/places/v1/places/276u2838-460068d1484541c18b9a978a07c51fc7;context=Zmxvdy1pZD0wNjQyMjYyNi04YjNkLTVmZGEtYmUzMi01NjVkNDRlZTcwN2NfMTU2MzY1NDkyOTYzMl84MTY0XzI4ODUmcmFuaz0x?app_id=SdTuhGMGwWWx6EFxDEmm&app_code=lmlX4F1r-Od90a1aZjqWsQ",
+                "id": "276u2838-460068d1484541c18b9a978a07c51fc7",
+                "openingHours": {
+                    "text": "Mon-Sat: 00:00 - 00:00",
+                    "label": "Opening hours",
+                    "isOpen": true,
+                    "structured": [
+                        {
+                            "start": "T000000",
+                            "duration": "PT24H00M",
+                            "recurrence": "FREQ:DAILY;BYDAY:MO,TU,WE,TH,FR,SA"
+                        }
+                    ]
+                },
+                "alternativeNames": [
+                    {
+                        "name": "Am Ostpark",
+                        "language": "de"
+                    }
+                ]
+            },
+            {
+                "position": [
+                    48.11809,
+                    11.62124
+                ],
+                "distance": 624,
+                "title": "Apartment Bremerich",
+                "averageRating": 0,
+                "category": {
+                    "id": "hotel",
+                    "title": "Hotel",
+                    "href": "https://places.cit.api.here.com/places/v1/categories/places/hotel?app_id=SdTuhGMGwWWx6EFxDEmm&app_code=lmlX4F1r-Od90a1aZjqWsQ",
+                    "type": "urn:nlp-types:category",
+                    "system": "places"
+                },
+                "icon": "https://download.vcdn.cit.data.here.com/p/d/places2_stg/icons/categories/01.icon",
+                "vicinity": "Steinseestraße 5<br/>81671 Munich",
+                "having": [],
+                "type": "urn:nlp-types:place",
+                "href": "https://places.cit.api.here.com/places/v1/places/276jx7ps-e1563ebeb9a70201e033824fe60ca979;context=Zmxvdy1pZD0wNjQyMjYyNi04YjNkLTVmZGEtYmUzMi01NjVkNDRlZTcwN2NfMTU2MzY1NDkyOTYzMl84MTY0XzI4ODUmcmFuaz0y?app_id=SdTuhGMGwWWx6EFxDEmm&app_code=lmlX4F1r-Od90a1aZjqWsQ",
+                "id": "276jx7ps-e1563ebeb9a70201e033824fe60ca979"
+            },
+            {
+                "position": [
+                    48.11924,
+                    11.63877
+                ],
+                "distance": 689,
+                "title": "Mandarin Oriental Hotel München",
+                "averageRating": 0,
+                "category": {
+                    "id": "hotel",
+                    "title": "Hotel",
+                    "href": "https://places.cit.api.here.com/places/v1/categories/places/hotel?app_id=SdTuhGMGwWWx6EFxDEmm&app_code=lmlX4F1r-Od90a1aZjqWsQ",
+                    "type": "urn:nlp-types:category",
+                    "system": "places"
+                },
+                "icon": "https://download.vcdn.cit.data.here.com/p/d/places2_stg/icons/categories/01.icon",
+                "vicinity": "Großvenedigerstraße<br/>81735 Munich",
+                "having": [],
+                "type": "urn:nlp-types:place",
+                "href": "https://places.cit.api.here.com/places/v1/places/276u2838-29e7130839d641599b87efe2c346b600;context=Zmxvdy1pZD0wNjQyMjYyNi04YjNkLTVmZGEtYmUzMi01NjVkNDRlZTcwN2NfMTU2MzY1NDkyOTYzMl84MTY0XzI4ODUmcmFuaz0z?app_id=SdTuhGMGwWWx6EFxDEmm&app_code=lmlX4F1r-Od90a1aZjqWsQ",
+                "id": "276u2838-29e7130839d641599b87efe2c346b600"
+            },
+            {
+                "position": [
+                    48.11721,
+                    11.61952
+                ],
+                "distance": 758,
+                "title": "Gästezimmer Becker",
+                "averageRating": 0,
+                "category": {
+                    "id": "hotel",
+                    "title": "Hotel",
+                    "href": "https://places.cit.api.here.com/places/v1/categories/places/hotel?app_id=SdTuhGMGwWWx6EFxDEmm&app_code=lmlX4F1r-Od90a1aZjqWsQ",
+                    "type": "urn:nlp-types:category",
+                    "system": "places"
+                },
+                "icon": "https://download.vcdn.cit.data.here.com/p/d/places2_stg/icons/categories/01.icon",
+                "vicinity": "Echardinger Straße 103<br/>81671 Munich",
+                "having": [],
+                "type": "urn:nlp-types:place",
+                "href": "https://places.cit.api.here.com/places/v1/places/276u2838-c82cc5037b4a4256843b20b3b5af4d87;context=Zmxvdy1pZD0wNjQyMjYyNi04YjNkLTVmZGEtYmUzMi01NjVkNDRlZTcwN2NfMTU2MzY1NDkyOTYzMl84MTY0XzI4ODUmcmFuaz00?app_id=SdTuhGMGwWWx6EFxDEmm&app_code=lmlX4F1r-Od90a1aZjqWsQ",
+                "id": "276u2838-c82cc5037b4a4256843b20b3b5af4d87"
+            },
+            {
+                "position": [
+                    48.12658,
+                    11.63003
+                ],
+                "distance": 941,
+                "title": "Central Hotel-Apart",
+                "averageRating": 0,
+                "category": {
+                    "id": "hotel",
+                    "title": "Hotel",
+                    "href": "https://places.cit.api.here.com/places/v1/categories/places/hotel?app_id=SdTuhGMGwWWx6EFxDEmm&app_code=lmlX4F1r-Od90a1aZjqWsQ",
+                    "type": "urn:nlp-types:category",
+                    "system": "places"
+                },
+                "icon": "https://download.vcdn.cit.data.here.com/p/d/places2_stg/icons/categories/01.icon",
+                "vicinity": "Josephsburgstraße 26<br/>81673 München",
+                "having": [],
+                "type": "urn:nlp-types:place",
+                "href": "https://places.cit.api.here.com/places/v1/places/276u283b-88ad1b74a7004453b2f9e1a3b00a0ad9;context=Zmxvdy1pZD0wNjQyMjYyNi04YjNkLTVmZGEtYmUzMi01NjVkNDRlZTcwN2NfMTU2MzY1NDkyOTYzMl84MTY0XzI4ODUmcmFuaz01?app_id=SdTuhGMGwWWx6EFxDEmm&app_code=lmlX4F1r-Od90a1aZjqWsQ",
+                "id": "276u283b-88ad1b74a7004453b2f9e1a3b00a0ad9",
+                "alternativeNames": [
+                    {
+                        "name": "Central Hotel-Apart München",
+                        "language": "en"
+                    },
+                    {
+                        "name": "Central Hotel-Apart Hotel Munich",
+                        "language": "en"
+                    }
+                ]
+            },
+            {
+                "position": [
+                    48.11149,
+                    11.61778
+                ],
+                "distance": 1148,
+                "title": "NH Munchen City Sud",
+                "averageRating": 0,
+                "category": {
+                    "id": "hotel",
+                    "title": "Hotel",
+                    "href": "https://places.cit.api.here.com/places/v1/categories/places/hotel?app_id=SdTuhGMGwWWx6EFxDEmm&app_code=lmlX4F1r-Od90a1aZjqWsQ",
+                    "type": "urn:nlp-types:category",
+                    "system": "places"
+                },
+                "icon": "https://download.vcdn.cit.data.here.com/p/d/places2_stg/icons/categories/01.icon",
+                "vicinity": "Ottobrunner Straße 17<br/>81737 Munich",
+                "having": [],
+                "type": "urn:nlp-types:place",
+                "href": "https://places.cit.api.here.com/places/v1/places/276u2838-608d77e479a04240aedce8b3daa6d707;context=Zmxvdy1pZD0wNjQyMjYyNi04YjNkLTVmZGEtYmUzMi01NjVkNDRlZTcwN2NfMTU2MzY1NDkyOTYzMl84MTY0XzI4ODUmcmFuaz02?app_id=SdTuhGMGwWWx6EFxDEmm&app_code=lmlX4F1r-Od90a1aZjqWsQ",
+                "id": "276u2838-608d77e479a04240aedce8b3daa6d707",
+                "openingHours": {
+                    "text": "Mon-Sun: 00:00 - 24:00",
+                    "label": "Opening hours",
+                    "isOpen": true,
+                    "structured": [
+                        {
+                            "start": "T000000",
+                            "duration": "PT24H00M",
+                            "recurrence": "FREQ:DAILY;BYDAY:MO,TU,WE,TH,FR,SA,SU"
+                        }
+                    ]
+                },
+                "chainIds": [
+                    "799"
+                ],
+                "alternativeNames": [
+                    {
+                        "name": "Nh Apartments Munchen Am Ring Hotel Munich",
+                        "language": "en"
+                    },
+                    {
+                        "name": "Nh Hotel Munich",
+                        "language": "en"
+                    },
+                    {
+                        "name": "Nh Hotels Munich",
+                        "language": "en"
+                    },
+                    {
+                        "name": "NH München City Süd",
+                        "language": "de"
+                    }
+                ]
+            },
+            {
+                "position": [
+                    48.11166,
+                    11.6173
+                ],
+                "distance": 1164,
+                "title": "K1-München",
+                "averageRating": 0,
+                "category": {
+                    "id": "hotel",
+                    "title": "Hotel",
+                    "href": "https://places.cit.api.here.com/places/v1/categories/places/hotel?app_id=SdTuhGMGwWWx6EFxDEmm&app_code=lmlX4F1r-Od90a1aZjqWsQ",
+                    "type": "urn:nlp-types:category",
+                    "system": "places"
+                },
+                "icon": "https://download.vcdn.cit.data.here.com/p/d/places2_stg/icons/categories/01.icon",
+                "vicinity": "Ottobrunner Straße 12<br/>81737 Munich",
+                "having": [],
+                "type": "urn:nlp-types:place",
+                "href": "https://places.cit.api.here.com/places/v1/places/276u2838-d15b62c59a08465780ec07592477f1d1;context=Zmxvdy1pZD0wNjQyMjYyNi04YjNkLTVmZGEtYmUzMi01NjVkNDRlZTcwN2NfMTU2MzY1NDkyOTYzMl84MTY0XzI4ODUmcmFuaz03?app_id=SdTuhGMGwWWx6EFxDEmm&app_code=lmlX4F1r-Od90a1aZjqWsQ",
+                "id": "276u2838-d15b62c59a08465780ec07592477f1d1"
+            },
+            {
+                "position": [
+                    48.11166,
+                    11.6173
+                ],
+                "distance": 1164,
+                "title": "K1 My Second Home",
+                "averageRating": 0,
+                "category": {
+                    "id": "hotel",
+                    "title": "Hotel",
+                    "href": "https://places.cit.api.here.com/places/v1/categories/places/hotel?app_id=SdTuhGMGwWWx6EFxDEmm&app_code=lmlX4F1r-Od90a1aZjqWsQ",
+                    "type": "urn:nlp-types:category",
+                    "system": "places"
+                },
+                "icon": "https://download.vcdn.cit.data.here.com/p/d/places2_stg/icons/categories/01.icon",
+                "vicinity": "Ottobrunner Straße 12<br/>81737 Munich",
+                "having": [],
+                "type": "urn:nlp-types:place",
+                "href": "https://places.cit.api.here.com/places/v1/places/276u2838-fb5c77a9787042f7af457e511c821a8d;context=Zmxvdy1pZD0wNjQyMjYyNi04YjNkLTVmZGEtYmUzMi01NjVkNDRlZTcwN2NfMTU2MzY1NDkyOTYzMl84MTY0XzI4ODUmcmFuaz04?app_id=SdTuhGMGwWWx6EFxDEmm&app_code=lmlX4F1r-Od90a1aZjqWsQ",
+                "id": "276u2838-fb5c77a9787042f7af457e511c821a8d"
+            },
+            {
+                "position": [
+                    48.11487,
+                    11.61457
+                ],
+                "distance": 1176,
+                "title": "Alter Wirt Ramersdorf",
+                "averageRating": 0,
+                "category": {
+                    "id": "accommodation",
+                    "title": "Accommodation",
+                    "href": "https://places.cit.api.here.com/places/v1/categories/places/accommodation?app_id=SdTuhGMGwWWx6EFxDEmm&app_code=lmlX4F1r-Od90a1aZjqWsQ",
+                    "type": "urn:nlp-types:category",
+                    "system": "places"
+                },
+                "icon": "https://download.vcdn.cit.data.here.com/p/d/places2_stg/icons/categories/01.icon",
+                "vicinity": "Aribonenstraße 6<br/>81669 München",
+                "having": [],
+                "type": "urn:nlp-types:place",
+                "href": "https://places.cit.api.here.com/places/v1/places/276u2838-329c9663c87a49e88216541db440547d;context=Zmxvdy1pZD0wNjQyMjYyNi04YjNkLTVmZGEtYmUzMi01NjVkNDRlZTcwN2NfMTU2MzY1NDkyOTYzMl84MTY0XzI4ODUmcmFuaz05?app_id=SdTuhGMGwWWx6EFxDEmm&app_code=lmlX4F1r-Od90a1aZjqWsQ",
+                "tags": [
+                    {
+                        "id": "european",
+                        "title": "European",
+                        "group": "cuisine"
+                    },
+                    {
+                        "id": "german",
+                        "title": "German",
+                        "group": "cuisine"
+                    }
+                ],
+                "id": "276u2838-329c9663c87a49e88216541db440547d",
+                "openingHours": {
+                    "text": "Mon-Sun: 09:30 - 00:00",
+                    "label": "Opening hours",
+                    "isOpen": true,
+                    "structured": [
+                        {
+                            "start": "T093000",
+                            "duration": "PT14H30M",
+                            "recurrence": "FREQ:DAILY;BYDAY:MO,TU,WE,TH,FR,SA,SU"
+                        }
+                    ]
+                }
+            },
+            {
+                "position": [
+                    48.12891,
+                    11.6306
+                ],
+                "distance": 1202,
+                "title": "Hotel Eisenreich",
+                "averageRating": 0,
+                "category": {
+                    "id": "hotel",
+                    "title": "Hotel",
+                    "href": "https://places.cit.api.here.com/places/v1/categories/places/hotel?app_id=SdTuhGMGwWWx6EFxDEmm&app_code=lmlX4F1r-Od90a1aZjqWsQ",
+                    "type": "urn:nlp-types:category",
+                    "system": "places"
+                },
+                "icon": "https://download.vcdn.cit.data.here.com/p/d/places2_stg/icons/categories/01.icon",
+                "vicinity": "Baumkirchner Straße 17<br/>81673 Munich",
+                "having": [],
+                "type": "urn:nlp-types:place",
+                "href": "https://places.cit.api.here.com/places/v1/places/276u283b-cb0b09ccdc9e42bbac1250a73271a952;context=Zmxvdy1pZD0wNjQyMjYyNi04YjNkLTVmZGEtYmUzMi01NjVkNDRlZTcwN2NfMTU2MzY1NDkyOTYzMl84MTY0XzI4ODUmcmFuaz0xMA?app_id=SdTuhGMGwWWx6EFxDEmm&app_code=lmlX4F1r-Od90a1aZjqWsQ",
+                "id": "276u283b-cb0b09ccdc9e42bbac1250a73271a952",
+                "alternativeNames": [
+                    {
+                        "name": "Eisenreich",
+                        "language": "de"
+                    }
+                ]
+            },
+            {
+                "position": [
+                    48.12947,
+                    11.62697
+                ],
+                "distance": 1278,
+                "title": "Ibis Muenchen City Ost",
+                "averageRating": 0,
+                "category": {
+                    "id": "hotel",
+                    "title": "Hotel",
+                    "href": "https://places.cit.api.here.com/places/v1/categories/places/hotel?app_id=SdTuhGMGwWWx6EFxDEmm&app_code=lmlX4F1r-Od90a1aZjqWsQ",
+                    "type": "urn:nlp-types:category",
+                    "system": "places"
+                },
+                "icon": "https://download.vcdn.cit.data.here.com/p/d/places2_stg/icons/categories/01.icon",
+                "vicinity": "Berg-am-Laim-Straße 125<br/>81673 Munich",
+                "having": [],
+                "type": "urn:nlp-types:place",
+                "href": "https://places.cit.api.here.com/places/v1/places/276jx7ps-931d7bd7dd5a092c5a62c21803f5cb6c;context=Zmxvdy1pZD0wNjQyMjYyNi04YjNkLTVmZGEtYmUzMi01NjVkNDRlZTcwN2NfMTU2MzY1NDkyOTYzMl84MTY0XzI4ODUmcmFuaz0xMQ?app_id=SdTuhGMGwWWx6EFxDEmm&app_code=lmlX4F1r-Od90a1aZjqWsQ",
+                "id": "276jx7ps-931d7bd7dd5a092c5a62c21803f5cb6c",
+                "chainIds": [
+                    "23"
+                ],
+                "alternativeNames": [
+                    {
+                        "name": "ibis Muenchen City Ost",
+                        "language": "de"
+                    }
+                ]
+            },
+            {
+                "position": [
+                    48.12998,
+                    11.62671
+                ],
+                "distance": 1337,
+                "title": "K&K Hotelservice München Ug",
+                "averageRating": 0,
+                "category": {
+                    "id": "hotel",
+                    "title": "Hotel",
+                    "href": "https://places.cit.api.here.com/places/v1/categories/places/hotel?app_id=SdTuhGMGwWWx6EFxDEmm&app_code=lmlX4F1r-Od90a1aZjqWsQ",
+                    "type": "urn:nlp-types:category",
+                    "system": "places"
+                },
+                "icon": "https://download.vcdn.cit.data.here.com/p/d/places2_stg/icons/categories/01.icon",
+                "vicinity": "Levelingstraße 10<br/>81673 Munich",
+                "having": [],
+                "type": "urn:nlp-types:place",
+                "href": "https://places.cit.api.here.com/places/v1/places/276u283b-2717cca08589409c9a630b980b604ce0;context=Zmxvdy1pZD0wNjQyMjYyNi04YjNkLTVmZGEtYmUzMi01NjVkNDRlZTcwN2NfMTU2MzY1NDkyOTYzMl84MTY0XzI4ODUmcmFuaz0xMg?app_id=SdTuhGMGwWWx6EFxDEmm&app_code=lmlX4F1r-Od90a1aZjqWsQ",
+                "id": "276u283b-2717cca08589409c9a630b980b604ce0"
+            },
+            {
+                "position": [
+                    48.12728,
+                    11.64236
+                ],
+                "distance": 1389,
+                "title": "Titanic Beach Resort & Spa",
+                "averageRating": 0,
+                "category": {
+                    "id": "accommodation",
+                    "title": "Accommodation",
+                    "href": "https://places.cit.api.here.com/places/v1/categories/places/accommodation?app_id=SdTuhGMGwWWx6EFxDEmm&app_code=lmlX4F1r-Od90a1aZjqWsQ",
+                    "type": "urn:nlp-types:category",
+                    "system": "places"
+                },
+                "icon": "https://download.vcdn.cit.data.here.com/p/d/places2_stg/icons/categories/01.icon",
+                "vicinity": "Schüleinplatz<br/>81673 Munich",
+                "having": [],
+                "type": "urn:nlp-types:place",
+                "href": "https://places.cit.api.here.com/places/v1/places/276d408k-9241c6f17d3e0113aa4f4acf84dfa99d;context=Zmxvdy1pZD0wNjQyMjYyNi04YjNkLTVmZGEtYmUzMi01NjVkNDRlZTcwN2NfMTU2MzY1NDkyOTYzMl84MTY0XzI4ODUmcmFuaz0xMw?app_id=SdTuhGMGwWWx6EFxDEmm&app_code=lmlX4F1r-Od90a1aZjqWsQ",
+                "id": "276d408k-9241c6f17d3e0113aa4f4acf84dfa99d"
+            },
+            {
+                "position": [
+                    48.1204,
+                    11.64866
+                ],
+                "distance": 1434,
+                "title": "Arthotel Haar",
+                "averageRating": 0,
+                "category": {
+                    "id": "hotel",
+                    "title": "Hotel",
+                    "href": "https://places.cit.api.here.com/places/v1/categories/places/hotel?app_id=SdTuhGMGwWWx6EFxDEmm&app_code=lmlX4F1r-Od90a1aZjqWsQ",
+                    "type": "urn:nlp-types:category",
+                    "system": "places"
+                },
+                "icon": "https://download.vcdn.cit.data.here.com/p/d/places2_stg/icons/categories/01.icon",
+                "vicinity": "Waldstraße 25<br/>81825 Munich",
+                "having": [],
+                "type": "urn:nlp-types:place",
+                "href": "https://places.cit.api.here.com/places/v1/places/276aabd1-b06ed48f9b1f0adfc61338a646839f76;context=Zmxvdy1pZD0wNjQyMjYyNi04YjNkLTVmZGEtYmUzMi01NjVkNDRlZTcwN2NfMTU2MzY1NDkyOTYzMl84MTY0XzI4ODUmcmFuaz0xNA?app_id=SdTuhGMGwWWx6EFxDEmm&app_code=lmlX4F1r-Od90a1aZjqWsQ",
+                "id": "276aabd1-b06ed48f9b1f0adfc61338a646839f76"
+            },
+            {
+                "position": [
+                    48.130254,
+                    11.621889
+                ],
+                "distance": 1467,
+                "title": "Casa Barvaria",
+                "averageRating": 0,
+                "category": {
+                    "id": "hotel",
+                    "title": "Hotel",
+                    "href": "https://places.cit.api.here.com/places/v1/categories/places/hotel?app_id=SdTuhGMGwWWx6EFxDEmm&app_code=lmlX4F1r-Od90a1aZjqWsQ",
+                    "type": "urn:nlp-types:category",
+                    "system": "places"
+                },
+                "icon": "https://download.vcdn.cit.data.here.com/p/d/places2_stg/icons/categories/01.icon",
+                "vicinity": "Berg-am-Laim-Straße 93<br/>81673 Munich",
+                "having": [],
+                "type": "urn:nlp-types:place",
+                "href": "https://places.cit.api.here.com/places/v1/places/276u283b-d3f93763640f452485393aff149cbca9;context=Zmxvdy1pZD0wNjQyMjYyNi04YjNkLTVmZGEtYmUzMi01NjVkNDRlZTcwN2NfMTU2MzY1NDkyOTYzMl84MTY0XzI4ODUmcmFuaz0xNQ?app_id=SdTuhGMGwWWx6EFxDEmm&app_code=lmlX4F1r-Od90a1aZjqWsQ",
+                "id": "276u283b-d3f93763640f452485393aff149cbca9",
+                "openingHours": {
+                    "text": "Mon-Sun: 00:00 - 24:00:00",
+                    "label": "Opening hours",
+                    "isOpen": true,
+                    "structured": [
+                        {
+                            "start": "T000000",
+                            "duration": "PT24H00M",
+                            "recurrence": "FREQ:DAILY;BYDAY:MO,TU,WE,TH,FR,SA,SU"
+                        }
+                    ]
+                }
+            },
+            {
+                "position": [
+                    48.13144,
+                    11.62821
+                ],
+                "distance": 1485,
+                "title": "Holiday Inn Munich - City East",
+                "averageRating": 0,
+                "category": {
+                    "id": "hotel",
+                    "title": "Hotel",
+                    "href": "https://places.cit.api.here.com/places/v1/categories/places/hotel?app_id=SdTuhGMGwWWx6EFxDEmm&app_code=lmlX4F1r-Od90a1aZjqWsQ",
+                    "type": "urn:nlp-types:category",
+                    "system": "places"
+                },
+                "icon": "https://download.vcdn.cit.data.here.com/p/d/places2_stg/icons/categories/01.icon",
+                "vicinity": "Neumarkter Straße 85A<br/>81673 Munich",
+                "having": [],
+                "type": "urn:nlp-types:place",
+                "href": "https://places.cit.api.here.com/places/v1/places/276u283b-e267b8df5ed74788b49d4e0f816ed8a0;context=Zmxvdy1pZD0wNjQyMjYyNi04YjNkLTVmZGEtYmUzMi01NjVkNDRlZTcwN2NfMTU2MzY1NDkyOTYzMl84MTY0XzI4ODUmcmFuaz0xNg?app_id=SdTuhGMGwWWx6EFxDEmm&app_code=lmlX4F1r-Od90a1aZjqWsQ",
+                "id": "276u283b-e267b8df5ed74788b49d4e0f816ed8a0",
+                "alternativeNames": [
+                    {
+                        "name": "Holiday Inn Express Munich - City East",
+                        "language": "en"
+                    }
+                ]
+            },
+            {
+                "position": [
+                    48.10488,
+                    11.62267
+                ],
+                "distance": 1560,
+                "title": "Staymunich Serviced Apartments",
+                "averageRating": 0,
+                "category": {
+                    "id": "accommodation",
+                    "title": "Accommodation",
+                    "href": "https://places.cit.api.here.com/places/v1/categories/places/accommodation?app_id=SdTuhGMGwWWx6EFxDEmm&app_code=lmlX4F1r-Od90a1aZjqWsQ",
+                    "type": "urn:nlp-types:category",
+                    "system": "places"
+                },
+                "icon": "https://download.vcdn.cit.data.here.com/p/d/places2_stg/icons/categories/01.icon",
+                "vicinity": "Ottobrunner Straße<br/>81737 Munich",
+                "having": [],
+                "type": "urn:nlp-types:place",
+                "href": "https://places.cit.api.here.com/places/v1/places/276u2838-2d4e06a399df4c03855451daeab3829c;context=Zmxvdy1pZD0wNjQyMjYyNi04YjNkLTVmZGEtYmUzMi01NjVkNDRlZTcwN2NfMTU2MzY1NDkyOTYzMl84MTY0XzI4ODUmcmFuaz0xNw?app_id=SdTuhGMGwWWx6EFxDEmm&app_code=lmlX4F1r-Od90a1aZjqWsQ",
+                "id": "276u2838-2d4e06a399df4c03855451daeab3829c",
+                "openingHours": {
+                    "text": "Mon-Fri: 07:00 - 21:00<br/>Sat, Sun: 08:00 - 17:00",
+                    "label": "Opening hours",
+                    "isOpen": false,
+                    "structured": [
+                        {
+                            "start": "T070000",
+                            "duration": "PT14H00M",
+                            "recurrence": "FREQ:DAILY;BYDAY:MO,TU,WE,TH,FR"
+                        },
+                        {
+                            "start": "T080000",
+                            "duration": "PT09H00M",
+                            "recurrence": "FREQ:DAILY;BYDAY:SA,SU"
+                        }
+                    ]
+                },
+                "alternativeNames": [
+                    {
+                        "name": "Stay Munich Serviced Apartments Hotel Munich",
+                        "language": "en"
+                    }
+                ]
+            },
+            {
+                "position": [
+                    48.12062,
+                    11.60708
+                ],
+                "distance": 1698,
+                "title": "Joyn Munich Rose",
+                "averageRating": 0,
+                "category": {
+                    "id": "hotel",
+                    "title": "Hotel",
+                    "href": "https://places.cit.api.here.com/places/v1/categories/places/hotel?app_id=SdTuhGMGwWWx6EFxDEmm&app_code=lmlX4F1r-Od90a1aZjqWsQ",
+                    "type": "urn:nlp-types:category",
+                    "system": "places"
+                },
+                "icon": "https://download.vcdn.cit.data.here.com/p/d/places2_stg/icons/categories/01.icon",
+                "vicinity": "Rosenheimer Straße 145K<br/>81671 Munich",
+                "having": [],
+                "type": "urn:nlp-types:place",
+                "href": "https://places.cit.api.here.com/places/v1/places/276u283b-334e14178a7d4d0b89c6c546a857a70f;context=Zmxvdy1pZD0wNjQyMjYyNi04YjNkLTVmZGEtYmUzMi01NjVkNDRlZTcwN2NfMTU2MzY1NDkyOTYzMl84MTY0XzI4ODUmcmFuaz0xOA?app_id=SdTuhGMGwWWx6EFxDEmm&app_code=lmlX4F1r-Od90a1aZjqWsQ",
+                "id": "276u283b-334e14178a7d4d0b89c6c546a857a70f"
+            },
+            {
+                "position": [
+                    48.11597,
+                    11.60415
+                ],
+                "distance": 1907,
+                "title": "Ferienwohnung Müller",
+                "averageRating": 0,
+                "category": {
+                    "id": "hotel",
+                    "title": "Hotel",
+                    "href": "https://places.cit.api.here.com/places/v1/categories/places/hotel?app_id=SdTuhGMGwWWx6EFxDEmm&app_code=lmlX4F1r-Od90a1aZjqWsQ",
+                    "type": "urn:nlp-types:category",
+                    "system": "places"
+                },
+                "icon": "https://download.vcdn.cit.data.here.com/p/d/places2_stg/icons/categories/01.icon",
+                "vicinity": "Laibacher Straße 4<br/>81669 Munich",
+                "having": [],
+                "type": "urn:nlp-types:place",
+                "href": "https://places.cit.api.here.com/places/v1/places/276u2838-0df66ae02a0c464da3fa32f63dc3aa3e;context=Zmxvdy1pZD0wNjQyMjYyNi04YjNkLTVmZGEtYmUzMi01NjVkNDRlZTcwN2NfMTU2MzY1NDkyOTYzMl84MTY0XzI4ODUmcmFuaz0xOQ?app_id=SdTuhGMGwWWx6EFxDEmm&app_code=lmlX4F1r-Od90a1aZjqWsQ",
+                "id": "276u2838-0df66ae02a0c464da3fa32f63dc3aa3e"
+            }
+        ]
+    },
+    "search": {
+        "context": {
+            "location": {
+                "position": [
+                    48.118118,
+                    11.629641
+                ],
+                "address": {
+                    "text": "Hechtseestraße 68<br/>Ramersdorf, 81671 Munich<br/>Germany",
+                    "house": "68",
+                    "street": "Hechtseestraße",
+                    "postalCode": "81671",
+                    "district": "Ramersdorf",
+                    "city": "Munich",
+                    "county": "Munich",
+                    "stateCode": "Bavaria",
+                    "country": "Germany",
+                    "countryCode": "DEU"
+                }
+            },
+            "type": "urn:nlp-types:place",
+            "href": "https://places.cit.api.here.com/places/v1/places/loc-dmVyc2lvbj0xO3RpdGxlPUhlY2h0c2Vlc3RyYSVDMyU5RmUrNjg7bGF0PTQ4LjExODExODE7bG9uPTExLjYyOTY0MDc7c3RyZWV0PUhlY2h0c2Vlc3RyYSVDMyU5RmU7aG91c2U9Njg7Y2l0eT1NdW5pY2g7cG9zdGFsQ29kZT04MTY3MTtjb3VudHJ5PURFVTtkaXN0cmljdD1SYW1lcnNkb3JmO3N0YXRlQ29kZT1CYXZhcmlhO2NvdW50eT1NdW5pY2g7Y2F0ZWdvcnlJZD1idWlsZGluZztzb3VyY2VTeXN0ZW09aW50ZXJuYWw;context=c2VhcmNoQ29udGV4dD0x?app_id=SdTuhGMGwWWx6EFxDEmm&app_code=lmlX4F1r-Od90a1aZjqWsQ"
+        }
+    }
+}
