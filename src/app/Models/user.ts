@@ -2,6 +2,7 @@
 export interface user {
   _id: string,
   email: string,
-  username: string,
-  exp: number,
+  name: string,
+  exp: number;
+  iat: number;
 }

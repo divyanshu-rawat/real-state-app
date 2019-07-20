@@ -1,17 +1,22 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { Router } from '@angular/router';
 import { user } from '../../Models/user';
 import { token } from '../../Models/token';
-import { tokenPayload } from '../../Models/tokenPayload';
+import { userForm } from '../../Models/userForm';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthenticationService {
 
+  private readonly apiurl = 'http://localhost:4000/api/';
+  private headers = new HttpHeaders().set('Content-Type', 'application/json').set('Accept', 'application/json');
+  private httpOptions = {
+    headers: this.headers
+  };
   private token: string;
   constructor(private http: HttpClient, private router: Router) { }
 
@@ -29,7 +34,7 @@ export class AuthenticationService {
 
   public logout(): void {
     this.token = '';
-    window.localStorage.removeItem('mean-token');
+    window.localStorage.removeItem('jwt');
     this.router.navigateByUrl('/');
   }
 
@@ -54,38 +59,29 @@ export class AuthenticationService {
     }
   }
 
-  private request(method: 'post' | 'get', type: 'authenticate' | 'register' | 'profile', user?: tokenPayload): Observable<any> {
-    let base: Observable<any>;
+  public registerUser(credentials: userForm): Observable<any> {
+    return this.http.post<any>(this.apiurl + 'user/register', credentials, this.httpOptions);
+  }
 
-    if (method === 'post') {
-      base = this.http.post(`/api/${type}`, user);
-    } else {
-      base = this.http.get(`/api/${type}`, { headers: { Authorization: `Bearer ${this.getToken()}` } });
-    }
+  public loginUser(credentials: userForm): Observable<any> {
+    return this.http.post<any>(this.apiurl + 'user/authenticate', credentials, this.httpOptions)
+      .pipe(
+        map((data: token) => {
+          if (data.token) {
+            this.setToken(data.token);
+          }
+          return data;
+        })
+      );
+  }
 
-    const request = base.pipe(
-      map((data: token) => {
-        if (data.token) {
-          this.setToken(data.token);
-        }
-        return data;
+  public fetchProfileInformation(): Observable<any> {
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json',
+        'access-token': this.getToken()
       })
-    );
-
-    return request;
+    };
+    return this.http.get<any>(this.apiurl + 'user/profile', httpOptions);
   }
-
-  public register(user: tokenPayload): Observable<any> {
-    return this.request('post', 'register', user);
-  }
-
-  public login(user: tokenPayload): Observable<any> {
-    return this.request('post', 'authenticate', user);
-  }
-
-  public profile(): Observable<any> {
-    return this.request('get', 'profile');
-  }
-
-
 }
