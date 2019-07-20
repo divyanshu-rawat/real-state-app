@@ -6,6 +6,6 @@ import { AuthenticationService } from './Services/AuthenticationService/authenti
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  constructor(public authenticationService: AuthenticationService) { }
+  constructor(public auth: AuthenticationService) { }
   title = 'limehome-frontend';
 }

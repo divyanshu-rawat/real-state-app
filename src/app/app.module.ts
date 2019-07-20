@@ -5,14 +5,21 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { RegisterComponent } from './Components/register/register.component';
-import { LoginComponent } from './Components/login/login.component';
+import { RegisterComponent } from './Components/app-register/register.component';
+import { LoginComponent } from './Components/app-login/login.component';
+import { HomeComponent } from './Components/app-home/home.component';
+import { AuthenticationService } from './Services/AuthenticationService/authentication.service';
+import { AuthGuardService } from './Services/AuthGuardService/auth-guard.service';
+import { DashboardComponent } from './Components/app-dashboard/dashboard.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     RegisterComponent,
     LoginComponent,
+    HomeComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
@@ -20,7 +27,10 @@ import { LoginComponent } from './Components/login/login.component';
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    AuthenticationService,
+    AuthGuardService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
