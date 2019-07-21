@@ -1,7 +1,7 @@
 export interface property {
     position: number[],
     title: string,
-    averageRating: string,
+    averageRating: number,
     icon: string,
     vicinity: string;
     type: string,

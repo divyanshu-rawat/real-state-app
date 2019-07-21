@@ -4,5 +4,5 @@ export interface user {
   email: string,
   name: string,
   exp: number;
-  iat: number;
+  iat?: number;
 }
