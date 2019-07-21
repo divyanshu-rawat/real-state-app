@@ -7,6 +7,7 @@ import data from '../../Shared/fake-data.json';
 import { property } from '../../Models/property';
 import { BookingService } from '../../Services/bookingService/booking.service';
 import { SearchService } from '../../Services/searchService/search.service';
+import { Router } from '@angular/router';
 
 import {
 
@@ -48,7 +49,8 @@ export class DashboardComponent implements OnInit {
     private auth: AuthenticationService,
     private propertyService: PropertyService,
     private bookingService: BookingService,
-    private searchService: SearchService
+    private searchService: SearchService,
+    private router: Router,
   ) {
     this.searchSubscription = this.searchService.getMessage()
       .subscribe(message => {
@@ -92,5 +94,10 @@ export class DashboardComponent implements OnInit {
         this.error = false;
       }, 2000);
     })
+  }
+
+
+  private viewProperty(property: property) {
+    this.router.navigate(['/property', property.id]);
   }
 }

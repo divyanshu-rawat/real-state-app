@@ -3,6 +3,6 @@
 <div class="property-key"> <strong>Vicinity:</strong> {{ property.vicinity | split }}</div>
 <div class="property-key"><strong>Distance:</strong> {{ property.distance }} m</div>
 <div class="btn-wrapper flex flex-row">
-  <div class="book-now-btn" (click) = "bookProperty(property)"> BOOK NOW</div>
-  <div class="view-more-btn"> VIEW MORE</div>
+  <div *ngIf="!hidden" class="book-now-btn" (click) = "bookPropertyEvent(property)"> BOOK NOW</div>
+  <div class="view-more-btn" (click) = "viewPropertyEvent(property)"> VIEW MORE</div>
 </div>

@@ -10,6 +10,7 @@ import { user } from '../../Models/user';
 export class AppBookingComponent implements OnInit {
   private bookings: any[];
   private userInformation: user;
+  private warning: boolean;
   constructor(private bookingService: BookingService) {
     this.userInformation = JSON.parse(localStorage.getItem('user'));
   }
@@ -17,6 +18,9 @@ export class AppBookingComponent implements OnInit {
   ngOnInit() {
     const userId = this.userInformation._id;
     this.bookingService.fetchBookingsInformation(userId).subscribe((bookings) => {
+      if (bookings.length == 0) {
+        this.warning = true;
+      }
       this.bookings = bookings;
     })
   }

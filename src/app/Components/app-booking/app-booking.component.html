@@ -8,7 +8,13 @@
   <div class="row">
     <div class="col-md-12 col-xs-12 col-lg-12 col-sm-12 properties-wrapper">
       <div class="col-md-4 col-lg-3 property-wrapper flex flex-col" *ngFor="let booking of bookings">
-        <app-property [property]="booking"></app-property>
+        <app-property [hidden]= "true" [property]="booking"></app-property>
+      </div>
+    </div>
+    <div *ngIf="warning" class="col-lg-6 col-md-6">
+      <div class="alert alert-info alert-dismissible">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>Info!</strong> You haven't made any booking till so far!
       </div>
     </div>
   </div>

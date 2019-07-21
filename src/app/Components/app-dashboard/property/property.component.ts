@@ -9,14 +9,19 @@ import { property } from '../../../Models/property';
 export class PropertyComponent implements OnInit {
 
   @Input() property: property;
-  @Output() sendPropertyId = new EventEmitter<property>();
+  @Input() hidden: boolean;
+  @Output() bookProperty = new EventEmitter<property>();
+  @Output() viewProperty = new EventEmitter<property>();
   constructor() { }
 
   ngOnInit() {
   }
 
-  private bookProperty(property: property) {
-    this.sendPropertyId.emit(property);
+  private bookPropertyEvent(property: property) {
+    this.bookProperty.emit(property);
+  }
+  private viewPropertyEvent(property: property) {
+    this.viewProperty.emit(property);
   }
 
 }

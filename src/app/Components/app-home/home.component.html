@@ -1,3 +1,6 @@
 <div class="container">
   <h1>LimeHome</h1>
+  <p>Welcome to <strong>LimeHome</strong>, At <strong>LimeHome</strong> you can book apartments throughout Germany.</p>
+  <p  *ngIf="!auth.isLoggedIn()" class="">Not a member? Please <a routerLink="/register">Register</a> instead.</p>
+  <p   *ngIf="!auth.isLoggedIn()" class="">Already a member? Please <a routerLink="/login">LogIn</a> instead.</p>
 </div>
