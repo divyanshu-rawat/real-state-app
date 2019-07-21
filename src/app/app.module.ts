@@ -12,6 +12,8 @@ import { AuthenticationService } from './Services/AuthenticationService/authenti
 import { AuthGuardService } from './Services/AuthGuardService/auth-guard.service';
 import { DashboardComponent } from './Components/app-dashboard/dashboard.component';
 import { SplitPipe } from './Pipes/split.pipe';
+// Module for pagination.
+import { NgxPaginationModule } from 'ngx-pagination';
 
 
 @NgModule({
@@ -27,7 +29,8 @@ import { SplitPipe } from './Pipes/split.pipe';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    NgxPaginationModule
   ],
   providers: [
     AuthenticationService,

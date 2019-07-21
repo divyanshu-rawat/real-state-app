@@ -11,6 +11,7 @@ import data from '../../Shared/fake-data.json';
 })
 export class DashboardComponent implements OnInit {
   private userInformation: user;
+  private p: number = 1;
   private properties: any[];
   private userLocation: location;
   constructor(private auth: AuthenticationService, private propertyService: PropertyService) { }
