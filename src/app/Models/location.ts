@@ -5,7 +5,7 @@ export interface location {
     address: address,
 }
 
-export interface address {
+interface address {
     text: string,
     house: string,
     street: string,

@@ -14,6 +14,7 @@ import { DashboardComponent } from './Components/app-dashboard/dashboard.compone
 import { SplitPipe } from './Pipes/split.pipe';
 // Module for pagination.
 import { NgxPaginationModule } from 'ngx-pagination';
+import { PropertyComponent } from './Components/app-dashboard/property/property.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
     HomeComponent,
     DashboardComponent,
     SplitPipe,
+    PropertyComponent,
   ],
   imports: [
     BrowserModule,
