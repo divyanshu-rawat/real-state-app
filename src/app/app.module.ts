@@ -20,6 +20,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Module for Filtering.
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { AppPropertyUsersComponent } from './Components/app-property-users/app-property-users.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
     SplitPipe,
     PropertyComponent,
     AppBookingComponent,
+    AppPropertyUsersComponent,
   ],
   imports: [
     BrowserModule,
