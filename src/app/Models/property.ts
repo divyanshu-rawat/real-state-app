@@ -8,6 +8,8 @@ export interface property {
     having: any[],
     href: string;
     id: string,
+    category: category,
+    distance: number,
     openingHours?: openingHours[],
     alternativeNames?: alternativeNames[]
 }

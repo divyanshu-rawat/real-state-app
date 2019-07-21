@@ -1,16 +1,25 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12 col-xs-12 col-lg-12 col-sm-12">
-      <h4>Welcome, {{ userInformation?.name }} </h4>
-      <p>List of properties near your location! </p>
-      <p>{{ userLocation?.address.street }}, {{ userLocation?.address.house }}</p>
-      <p>{{ userLocation?.address.city }}, {{ userLocation?.address.country }}, {{ userLocation?.address.postalCode }}</p>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <h4>Welcome, {{ userInformation?.name }} </h4>
+        <p>List of properties near your location! </p>
+        <p>{{ userLocation?.address.street }}, {{ userLocation?.address.house }}</p>
+        <p>{{ userLocation?.address.city }}, {{ userLocation?.address.country }}, {{ userLocation?.address.postalCode
+          }}</p>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="alert alert-info alert-dismissible" [@flyInOut] *ngIf="toogle">
+          <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+          <strong>Info!</strong> Congratulations property has been booked!
+        </div>
+      </div>
     </div>
   </div>
   <div class="row">
     <div class="col-md-12 col-xs-12 col-lg-12 col-sm-12 properties-wrapper">
       <div class="col-md-4 col-lg-3 property-wrapper flex flex-col" *ngFor="let property of properties  | paginate: { itemsPerPage: 9, currentPage: p }">
-        <app-property [property] = "property"></app-property>
+        <app-property [property]="property" (sendPropertyId)="bookProperty($event)"></app-property>
       </div>
     </div>
   </div>

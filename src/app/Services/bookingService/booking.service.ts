@@ -10,13 +10,24 @@ export class BookingService {
   private readonly apiurl = 'http://localhost:4000/api/user/';
   constructor(private http: HttpClient, private auth: AuthenticationService) { }
 
-  public fetchBookingsInformation(userId): Observable<any> {
+  public fetchBookingsInformation(userId): Observable<any[]> {
     const httpOptions = {
       headers: new HttpHeaders({
         'Content-Type': 'application/json',
         'access-token': this.auth.getToken()
       })
     };
-    return this.http.get<any>(this.apiurl + userId + '/bookings', httpOptions);
+    return this.http.get<any[]>(this.apiurl + userId + '/bookings', httpOptions);
   }
+
+  public postBookingInformation(userId, payload): Observable<any> {
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json',
+        'access-token': this.auth.getToken()
+      })
+    };
+    return this.http.post<any>(this.apiurl + userId + '/bookings', payload, httpOptions);
+  }
+
 }

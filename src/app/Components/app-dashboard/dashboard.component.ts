@@ -5,18 +5,42 @@ import { PropertyService } from '../../Services/propertyService/property.service
 import { location } from '../../Models/location';
 import data from '../../Shared/fake-data.json';
 import { property } from '../../Models/property';
+import { BookingService } from '../../Services/bookingService/booking.service';
+import {
+  trigger,
+  state,
+  style,
+  animate,
+  transition,
+} from '@angular/animations';
 
 @Component({
   selector: 'app-profile',
   templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.scss']
+  styleUrls: ['./dashboard.component.scss'],
+  animations: [
+    trigger('flyInOut', [
+      state('in', style({ opacity: 1, transform: 'translateY(0)' })),
+      transition('void => *', [
+        style({ opacity: 0, transform: 'translateY(100%)' }),
+        animate(800)
+      ]),
+      transition('* => void', [
+        animate(1000, style({ opacity: 0, transform: 'translateY(100%)' }))
+      ])
+    ])
+  ]
 })
 export class DashboardComponent implements OnInit {
   private userInformation: user;
   private p: number = 1;
   private properties: any[];
   private userLocation: location;
-  constructor(private auth: AuthenticationService, private propertyService: PropertyService) { }
+  private toogle = false;
+  constructor(
+    private auth: AuthenticationService,
+    private propertyService: PropertyService,
+    private bookingService: BookingService) { }
 
   ngOnInit() {
     this.userLocation = data.search.context.location;
@@ -36,7 +60,20 @@ export class DashboardComponent implements OnInit {
   }
 
   private bookProperty(property: property) {
-    console.log("user.id", this.userInformation._id);
-    console.log("property", property);
+    this.toogle = true;
+    const payload = {
+      id: property.id,
+      title: property.title,
+      category: property.category.title,
+      vicinity: property.vicinity,
+      distance: property.distance
+    }
+
+    this.bookingService.postBookingInformation(this.userInformation._id, payload).subscribe((response) => {
+      console.log("response", response);
+      setTimeout(() => {
+        this.toogle = false;
+      }, 2000);
+    })
   }
 }

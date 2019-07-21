@@ -16,7 +16,7 @@ import { SplitPipe } from './Pipes/split.pipe';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { PropertyComponent } from './Components/app-dashboard/property/property.component';
 import { AppBookingComponent } from './Components/app-booking/app-booking.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -34,7 +34,8 @@ import { AppBookingComponent } from './Components/app-booking/app-booking.compon
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    BrowserAnimationsModule
   ],
   providers: [
     AuthenticationService,
