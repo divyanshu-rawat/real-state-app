@@ -1,5 +1,16 @@
 # LimehomeFrontend
 
+Application Workflow 1.
+
+![alt tag](https://github.com/divyanshu-rawat/limehome-front-end/blob/master/src/assets/Application%20WorkFlow.gif)
+
+##
+
+Application Workflow 2.
+
+![alt tag](https://github.com/divyanshu-rawat/limehome-front-end/blob/master/src/assets/Application%20Workflow%202.gif)
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.4.
 
 ## Development server
