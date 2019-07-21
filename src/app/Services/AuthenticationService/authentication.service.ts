@@ -35,6 +35,8 @@ export class AuthenticationService {
   public logout(): void {
     this.token = '';
     window.localStorage.removeItem('jwt');
+    window.localStorage.removeItem('user');
+    window.localStorage.removeItem('properties');
     this.router.navigateByUrl('/');
   }
 

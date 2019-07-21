@@ -3,7 +3,7 @@ import { AuthenticationService } from '../../Services/authenticationService/auth
 import { user } from '../../Models/user';
 import { PropertyService } from '../../Services/propertyService/property.service';
 import { location } from '../../Models/location';
-import data from '../../Shared/fake-data.json';
+// import data from '../../Shared/fake-data.json';
 import { property } from '../../Models/property';
 import { BookingService } from '../../Services/bookingService/booking.service';
 import { SearchService } from '../../Services/searchService/search.service';
@@ -59,17 +59,23 @@ export class DashboardComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.userLocation = data.search.context.location;
-    this.properties = data.results.items;
+
     this.auth.fetchProfileInformation().subscribe(user => {
       this.userInformation = user.user;
       localStorage.setItem('user', JSON.stringify(this.userInformation));
-      /* Commented out to save api calls!.
+
+      const localStorageProperties = JSON.parse(localStorage.getItem('properties'));
+      if (localStorageProperties) {
+        this.userLocation = localStorageProperties.search.context.location;
+        this.properties = localStorageProperties.results.items;
+      } else {
         this.propertyService.getProperties().subscribe(properties => {
           console.log("properties", properties);
-          this.properties = properties;
+          this.userLocation = properties.search.context.location;
+          this.properties = properties.results.items;
+          localStorage.setItem('properties', JSON.stringify(properties));
         });
-      */
+      }
     }, (err) => {
       console.error(err);
     });
