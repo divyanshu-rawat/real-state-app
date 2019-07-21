@@ -60,7 +60,15 @@ export class AuthenticationService {
   }
 
   public registerUser(credentials: userForm): Observable<any> {
-    return this.http.post<any>(this.apiurl + 'user/register', credentials, this.httpOptions);
+    return this.http.post<any>(this.apiurl + 'user/register', credentials, this.httpOptions)
+    .pipe(
+      map((data: token) => {
+        if (data.token) {
+          this.setToken(data.token);
+        }
+        return data;
+      })
+    );
   }
 
   public loginUser(credentials: userForm): Observable<any> {
