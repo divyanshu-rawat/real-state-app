@@ -13,6 +13,10 @@
           <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
           <strong>Info!</strong> Congratulations property has been booked!
         </div>
+        <div class="alert alert-danger alert-dismissible" [@flyInOut] *ngIf="error">
+          <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+          <strong>Duplicate!</strong> Property already booked by you!
+        </div>
       </div>
     </div>
   </div>

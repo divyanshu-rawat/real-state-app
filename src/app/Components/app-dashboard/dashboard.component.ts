@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthenticationService } from '../../Services/AuthenticationService/authentication.service';
+import { AuthenticationService } from '../../Services/authenticationService/authentication.service';
 import { user } from '../../Models/user';
 import { PropertyService } from '../../Services/propertyService/property.service';
 import { location } from '../../Models/location';
@@ -40,6 +40,7 @@ export class DashboardComponent implements OnInit {
   private properties: any[];
   private userLocation: location;
   private toogle = false;
+  private error = false;
   private searchText: string;
   private searchSubscription: any;
 
@@ -73,7 +74,6 @@ export class DashboardComponent implements OnInit {
   }
 
   private bookProperty(property: property) {
-    this.toogle = true;
     const payload = {
       id: property.id,
       title: property.title,
@@ -81,11 +81,15 @@ export class DashboardComponent implements OnInit {
       vicinity: property.vicinity,
       distance: property.distance
     }
-
     this.bookingService.postBookingInformation(this.userInformation._id, payload).subscribe((response) => {
-      console.log("response", response);
+      this.toogle = true;
       setTimeout(() => {
         this.toogle = false;
+      }, 2000);
+    }, (err) => {
+      this.error = true;
+      setTimeout(() => {
+        this.error = false;
       }, 2000);
     })
   }
