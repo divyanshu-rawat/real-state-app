@@ -6,7 +6,10 @@ import { location } from '../../Models/location';
 import data from '../../Shared/fake-data.json';
 import { property } from '../../Models/property';
 import { BookingService } from '../../Services/bookingService/booking.service';
+import { SearchService } from '../../Services/searchService/search.service';
+
 import {
+
   trigger,
   state,
   style,
@@ -37,10 +40,20 @@ export class DashboardComponent implements OnInit {
   private properties: any[];
   private userLocation: location;
   private toogle = false;
+  private searchText: string;
+  private searchSubscription: any;
+
   constructor(
     private auth: AuthenticationService,
     private propertyService: PropertyService,
-    private bookingService: BookingService) { }
+    private bookingService: BookingService,
+    private searchService: SearchService
+  ) {
+    this.searchSubscription = this.searchService.getMessage()
+      .subscribe(message => {
+        this.searchText = message.text;
+      });
+  }
 
   ngOnInit() {
     this.userLocation = data.search.context.location;

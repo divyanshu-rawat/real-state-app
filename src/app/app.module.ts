@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 // Module for https requests.
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
@@ -17,6 +17,9 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import { PropertyComponent } from './Components/app-dashboard/property/property.component';
 import { AppBookingComponent } from './Components/app-booking/app-booking.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+// Module for Filtering.
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 @NgModule({
   declarations: [
@@ -35,7 +38,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HttpClientModule,
     FormsModule,
     NgxPaginationModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    Ng2SearchPipeModule,
+    ReactiveFormsModule
   ],
   providers: [
     AuthenticationService,

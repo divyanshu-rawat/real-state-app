@@ -18,7 +18,7 @@
   </div>
   <div class="row">
     <div class="col-md-12 col-xs-12 col-lg-12 col-sm-12 properties-wrapper">
-      <div class="col-md-4 col-lg-3 property-wrapper flex flex-col" *ngFor="let property of properties  | paginate: { itemsPerPage: 9, currentPage: p }">
+      <div class="col-md-4 col-lg-3 property-wrapper flex flex-col" *ngFor="let property of properties  | filter:searchText | paginate: { itemsPerPage: 9, currentPage: p }">
         <app-property [property]="property" (sendPropertyId)="bookProperty($event)"></app-property>
       </div>
     </div>

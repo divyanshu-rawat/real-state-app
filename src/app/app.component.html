@@ -11,14 +11,18 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li><a routerLink="/"> <strong>LimeHome</strong> </a></li>
+        <li *ngIf="auth.isLoggedIn()"><a routerLink="/bookings">My Bookings</a></li>
+        <li *ngIf="auth.isLoggedIn()"><a routerLink="/dashboard">Dashboard</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li *ngIf="!auth.isLoggedIn()"><a routerLink="/login">Sign in</a></li>
         <li *ngIf="!auth.isLoggedIn()"><a routerLink="/register">Register</a></li>
-        <li *ngIf="auth.isLoggedIn()"><a routerLink="/bookings">My Bookings</a></li>
-        <li *ngIf="auth.isLoggedIn()"><a routerLink="/dashboard">Dashboard</a></li>
         <li *ngIf="auth.isLoggedIn()"><a routerLink="/" (click)="auth.logout()">Logout</a></li>
       </ul>
+      <form *ngIf="auth.isLoggedIn() && showSearch" class="form-inline navbar-right my-2 my-lg-0" style="margin-top: .5em;">
+        <input class="form-control mr-sm-2" name="search" placeholder="Search for Properties" aria-label="Search"
+        [formControl]="queryField">
+      </form>
     </div>
   </div>
 </div>
