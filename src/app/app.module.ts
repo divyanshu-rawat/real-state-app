@@ -15,6 +15,7 @@ import { SplitPipe } from './Pipes/split.pipe';
 // Module for pagination.
 import { NgxPaginationModule } from 'ngx-pagination';
 import { PropertyComponent } from './Components/app-dashboard/property/property.component';
+import { AppBookingComponent } from './Components/app-booking/app-booking.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { PropertyComponent } from './Components/app-dashboard/property/property.
     DashboardComponent,
     SplitPipe,
     PropertyComponent,
+    AppBookingComponent,
   ],
   imports: [
     BrowserModule,

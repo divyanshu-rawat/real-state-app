@@ -4,6 +4,8 @@ import { user } from '../../Models/user';
 import { PropertyService } from '../../Services/propertyService/property.service';
 import { location } from '../../Models/location';
 import data from '../../Shared/fake-data.json';
+import { property } from '../../Models/property';
+
 @Component({
   selector: 'app-profile',
   templateUrl: './dashboard.component.html',
@@ -21,6 +23,7 @@ export class DashboardComponent implements OnInit {
     this.properties = data.results.items;
     this.auth.fetchProfileInformation().subscribe(user => {
       this.userInformation = user.user;
+      localStorage.setItem('user', JSON.stringify(this.userInformation));
       /* Commented out to save api calls!.
         this.propertyService.getProperties().subscribe(properties => {
           console.log("properties", properties);
@@ -30,5 +33,10 @@ export class DashboardComponent implements OnInit {
     }, (err) => {
       console.error(err);
     });
+  }
+
+  private bookProperty(property: property) {
+    console.log("user.id", this.userInformation._id);
+    console.log("property", property);
   }
 }
