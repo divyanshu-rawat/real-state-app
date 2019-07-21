@@ -1,13 +1,24 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12 col-xs-12 col-lg-12 col-sm-12">
-      <h4 class="form-signin-heading">Welcome, {{ userInformation?.name }} </h4>
-      <p>Here is the list of properties you can browse through!</p>
+      <h4>Welcome, {{ userInformation?.name }} </h4>
+      <p>List of properties near your location! </p>
+      <p>{{ userLocation?.address.street }}, {{ userLocation?.address.house }}</p>
+      <p>{{ userLocation?.address.city }}, {{ userLocation?.address.country }}, {{ userLocation?.address.postalCode }}</p>
     </div>
   </div>
   <div class="row">
-    <div class="col-md-12 col-xs-12 col-lg-12 col-sm-12">
-      
+    <div class="col-md-12 col-xs-12 col-lg-12 col-sm-12 properties-wrapper">
+      <div class="col-md-4 col-lg-3 property-wrapper flex flex-col" *ngFor="let property of properties">
+        <div class="property-key"> <strong>Category:</strong> {{ property.category.title }}</div>
+        <div class="property-key"> <strong>Title:</strong> {{ property.title }}</div>
+        <div class="property-key"> <strong>Vicinity:</strong> {{ property.vicinity | split }}</div>
+        <div class="property-key"><strong>Distance:</strong> {{ property.distance }} m</div>
+        <div class="btn-wrapper flex flex-row">
+          <div class="book-now-btn"> BOOK NOW</div>
+          <div class="view-more-btn"> VIEW MORE</div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

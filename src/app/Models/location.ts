@@ -1,15 +1,15 @@
 
 
 export interface location {
-    position: [number, number],
+    position: number[],
     address: address,
 }
 
 export interface address {
     text: string,
-    house: number,
+    house: string,
     street: string,
-    postalCode: number;
+    postalCode: string;
     district: string,
     city: string;
     county: string,

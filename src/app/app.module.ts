@@ -11,6 +11,7 @@ import { HomeComponent } from './Components/app-home/home.component';
 import { AuthenticationService } from './Services/AuthenticationService/authentication.service';
 import { AuthGuardService } from './Services/AuthGuardService/auth-guard.service';
 import { DashboardComponent } from './Components/app-dashboard/dashboard.component';
+import { SplitPipe } from './Pipes/split.pipe';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { DashboardComponent } from './Components/app-dashboard/dashboard.compone
     LoginComponent,
     HomeComponent,
     DashboardComponent,
+    SplitPipe,
   ],
   imports: [
     BrowserModule,
