@@ -1,5 +1,9 @@
 # LimehomeFrontend
 
+After allowing browser location permission, do **refresh** the page, as first time if location is not allowed api request is sent without lat, lng and returns nothing, so 1st time after location permission is given to the browser then app works smoothly afterwards.
+
+Here are the attached gifs that demonstrates the workflow of application.
+
 Application Workflow 1.
 
 ![alt tag](https://github.com/divyanshu-rawat/limehome-front-end/blob/master/src/assets/Application%20WorkFlow.gif)
