@@ -2,8 +2,7 @@
 
 After allowing browser location permission, do **refresh** the page, as first time if location is not allowed api request is sent without lat, lng and returns nothing, so 1st time after location permission is given to the browser then app works smoothly afterwards.
 
-**Disclaimer**
-Backend of real-state-app is a private repo. due to some N.D.A.
+**Disclaimer:** Backend of real-state-app is a private repo. due to some N.D.A.
 
 Here are the attached gifs that demonstrates the workflow of application.
 
